@@ -4,11 +4,14 @@ import com.tcc.apicuartostcc.entidades.Zona;
 import com.tcc.apicuartostcc.repositorios.Zonarepositorio;
 import com.tcc.apicuartostcc.servicios.ServicioGenerico;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class ZonaServicioImp implements ServicioGenerico<Zona> {
+
 
     @Autowired
     Zonarepositorio zonarepositorio;
